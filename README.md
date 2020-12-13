@@ -1,3 +1,7 @@
+# по урокам 
+https://gurufy.dev/document/5f7a0dff8fb7091e0cf61ff0/5f79390297e9f566a79b399f
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
