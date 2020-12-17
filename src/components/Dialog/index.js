@@ -8,6 +8,7 @@
 import React, { useReducer, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import Item from "./Item";
+import Title from "./Title";
 
 import { normalizeDialog } from "./helpers";
 import reducer from "./reducer";
@@ -64,7 +65,11 @@ const Dialog = ({ newMessage }) => {
     <div className="dialog">
       <div className="overflow" ref={dialogRef}>
         {normalizedDialog.map((item) => (
+          item.type === "message"? (
           <Item {...item} key={item.id} onRemove={onRemove} />
+          ):(
+            <Title key={item.id} date={item.date}/>
+          )
         ))}
       </div>
     </div>
